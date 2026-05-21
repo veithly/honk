@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="hk-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#facc15"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="#1a1003" stroke="url(#hk-grad)" stroke-width="2.5"/>
+  <ellipse cx="32" cy="42" rx="14" ry="11" fill="url(#hk-grad)" stroke="#7a4a02" stroke-width="2"/>
+  <ellipse cx="32" cy="26" rx="9" ry="10" fill="url(#hk-grad)" stroke="#7a4a02" stroke-width="2"/>
+  <path d="M40 22 L48 25 L40 28 Z" fill="#fb923c" stroke="#7a4a02" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="35" cy="24" r="2" fill="#1a1003"/>
+  <path d="M22 47 L18 53 M30 49 L28 55 M38 49 L40 55 M46 47 L50 53" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
+</svg>

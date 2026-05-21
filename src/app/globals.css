@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a1120;
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+  --panel: #0b1424;
+  --panel-strong: #1a2540;
+  --border: #243049;
+  --accent: #facc15;
+  --accent-2: #f59e0b;
+  --danger: #f87171;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-panel: var(--panel);
+  --color-panel-strong: var(--panel-strong);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-danger: var(--danger);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, "Liberation Mono", Consolas, monospace;
+
+  --animate-aurora: aurora 14s linear infinite;
+  --animate-shimmer-spin: shimmer-spin var(--speed) linear infinite;
+  --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-v: marquee-v var(--duration) linear infinite;
+  --animate-gradient-shift: gradient-shift 6s ease infinite;
+  --animate-orbit: orbit calc(var(--duration)) linear infinite;
+  --animate-pulse-slow: pulse-slow 2.6s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0%   { transform: translate3d(0,0,0) rotate(0deg); }
+  50%  { transform: translate3d(-3%, 2%, 0) rotate(180deg); }
+  100% { transform: translate3d(0,0,0) rotate(360deg); }
+}
+@keyframes shimmer-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes border-beam {
+  to { offset-distance: 100%; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-v {
+  from { transform: translateY(0); }
+  to   { transform: translateY(calc(-100% - var(--gap))); }
+}
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+@keyframes orbit {
+  0%   { transform: rotate(0deg) translateY(calc(var(--radius)*1px)) rotate(0deg); }
+  100% { transform: rotate(360deg) translateY(calc(var(--radius)*1px)) rotate(-360deg); }
+}
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(0.96); }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--background);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a, button, input, textarea, select { outline-color: var(--accent); }
+button, a { cursor: pointer; }
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.surface-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--accent) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--accent) 8%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.glow {
+  box-shadow: 0 0 80px -20px color-mix(in oklab, var(--accent) 55%, transparent);
+}
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
+
+.code-mini {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
