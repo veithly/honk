@@ -171,7 +171,7 @@ export default function HONKApp() {
         <div className="rounded-2xl border border-yellow-400/15 bg-yellow-400/[.04] p-6 text-sm text-yellow-100/80">
           <p className="text-xs uppercase tracking-[0.3em] text-yellow-300">Coverage</p>
           <p className="mt-3">
-            For Sui Overflow we ship the launch flow against Sui Testnet using the trial wallet. The
+            We ship the launch flow against Sui Testnet using the trial wallet. The
             vibe-check runs against a small reasoning model with a fallback path; the bonding-curve
             buy/sell PTBs are wired against the testnet Move package (publish is the Session 3g
             milestone). Reviewers can connect their own wallet via Mysten dApp Kit and launch from

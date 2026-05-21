@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://suioverflow-honk.veithly.workers.dev"),
+  metadataBase: new URL("https://honk.veithly.workers.dev"),
   title: "HONK — 30-second meme coin launcher on Sui",
   description:
     "Paste a name, drop an image, get a vibe score, launch a real Sui coin. Bonding curve in Move, sub-2-second finality, no rug rails.",

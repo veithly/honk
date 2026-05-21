@@ -10,5 +10,5 @@
   <ellipse cx="22" cy="19" rx="6" ry="7" fill="url(#hk-w-grad)" stroke="#7a4a02" stroke-width="1"/>
   <path d="M27 16 L33 19 L27 22 Z" fill="#fb923c" stroke="#7a4a02" stroke-width="0.8" stroke-linejoin="round"/>
   <circle cx="24" cy="18" r="1.4" fill="#1a1003"/>
-  <text x="50" y="32" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="26" letter-spacing="-1" fill="currentColor">HONK</text>
+  <text x="50" y="32" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="26" letter-spacing="-1" fill="#fefce8">HONK</text>
 </svg>

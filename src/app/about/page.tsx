@@ -63,7 +63,7 @@ export default function AboutPage() {
 
       <footer className="border-t border-yellow-400/15">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-xs text-yellow-100/60">
-          <span>Built for Sui Overflow 2026 · Degen track</span>
+          <span>Sui Testnet · open source</span>
           <Link href="/app" className="text-yellow-100 hover:text-white">
             Try the launcher →
           </Link>
