@@ -138,7 +138,7 @@ export default function HONKApp() {
               <div className="flex items-center justify-between text-yellow-200">
                 <span className="text-[11px] uppercase tracking-[0.25em]">Coin minted · HONK!</span>
                 <span className="rounded-full border border-yellow-300/40 bg-yellow-300/10 px-2 py-0.5 text-[10px] text-yellow-100">
-                  {result.mode === "real" ? `Real PTB · ${result.signer}` : "Dry-run"}
+                  {result.mode === "real" ? `Real Move call · ${result.signer}` : "Dry-run"}
                 </span>
               </div>
 
@@ -173,8 +173,7 @@ export default function HONKApp() {
           <p className="mt-3">
             We ship the launch flow against Sui Testnet using the trial wallet. The
             vibe-check runs against a small reasoning model with a fallback path; the bonding-curve
-            buy/sell PTBs are wired against the testnet Move package (publish is the Session 3g
-            milestone). Reviewers can connect their own wallet via Mysten dApp Kit and launch from
+            launch calls are wired against the published testnet Move package (). Reviewers can connect their own wallet via Mysten dApp Kit and launch from
             their address with the same UX.
           </p>
         </div>

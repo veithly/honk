@@ -19,6 +19,8 @@
     "SUI_FULLNODE_URL": "https://fullnode.testnet.sui.io:443",
     "NEXT_PUBLIC_SUI_FULLNODE_URL": "https://fullnode.testnet.sui.io:443",
     "NEXT_PUBLIC_APP_URL": "https://honk.veithly.workers.dev",
+    "NEXT_PUBLIC_MOVE_PACKAGE_ID": "0x442d4cd0973df033526d86c4c0da227217167fb4c8424d37fb6eb901f2fdc17f",
+    "MOVE_PACKAGE_ID": "0x442d4cd0973df033526d86c4c0da227217167fb4c8424d37fb6eb901f2fdc17f",
     "STEPFUN_API_BASE": "https://api.stepfun.com/v1",
     "STEPFUN_LLM_MODEL": "step-3.6",
     "OPENAI_LLM_MODEL": "gpt-4o-mini",
